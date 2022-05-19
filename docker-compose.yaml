@@ -1,0 +1,12 @@
+# FRAML - GENERAL DOCKER COMPOSE
+version: "3.9"
+services:
+  postgres-screening-db:
+    image: postgres:14.0
+    ports:
+      - "5438:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: data-screening-service
+      
